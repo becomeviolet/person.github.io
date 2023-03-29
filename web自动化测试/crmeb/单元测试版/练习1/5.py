@@ -73,51 +73,16 @@ class kaida(unittest.TestCase):
         time.sleep(1)
         self.driver.find_element(By.XPATH, '//i[@class="ivu-icon ivu-icon-ios-add"]').click()
         # 选择iframe
-        time.sleep(3)
-        self.iframe1 = self.driver.find_element(By.XPATH, '/html/body/div[19]/div[2]/div/div/div[2]/iframe')
-        self.driver.switch_to.frame(self.iframe1)
-
-        # 选择图片
+        self.driver.implicitly_wait(10)
         time.sleep(1)
+        self.iframe1 = self.driver.find_elements(By.XPATH,'//iframe')
+        self.driver.switch_to.frame(self.iframe1[0])
         self.driver.find_element(By.XPATH,
                                  '/html/body/div[1]/div/div[1]/div[1]/div[2]/table/tbody/tr[1]/td[1]/div/div/label/span/input').click()
-        # 用户头像
-        self.driver.implicitly_wait(10)
-        time.sleep(1)
-        self.driver.find_element(By.XPATH,
-                                 '/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[2]/div/div/div/div/div/i').click()
-        self.driver.implicitly_wait(10)
-        time.sleep(2)
-        self.iframe2 = self.driver.find_element(By.XPATH, '/html/body/div[28]/div[2]/div/div/div[2]/iframe')
-        self.driver.switch_to.frame(self.iframe2)
-        self.driver.execute_script(
-            script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(1) > img").click()')
-        self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[2]/div/div[1]/div/button[1]/span').click()
-        #
-        time.sleep(2)
-        self.driver.find_element(By.XPATH,
-                                 '/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[3]/div/div/div/input').send_keys(
-            "test_hzt")
-        self.driver.find_element(By.XPATH,
-                                 "/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[4]/div/div/div/textarea").send_keys(
-            "test_goodgood")
-        self.driver.find_element(By.XPATH,
-                                 "/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[5]/div/div/div/div[5]").click()
-        self.driver.find_element(By.XPATH,
-                                 '/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[6]/div/div/div/div[5]').click()
-        #
-        time.sleep(1)
-        self.driver.find_element(By.XPATH,
-                                 "/html/body/div[24]/div[2]/div/div/div/div/div[2]/div/form/div/div[7]/div/div/div/div/div/i").click()
-        self.iframe3 = self.driver.find_element(By.XPATH, "/html/body/div[30]/div[2]/div/div/div[2]/iframe")
-        self.driver.switch_to.frame(self.iframe3)
-        self.driver.execute_script(
-            script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(1) > img").click()')
-        self.driver.find_element(By.XPATH, '/html/body/div[1]/div/div/div/div[2]/div/div[1]/div/button[1]/span').click()
-        self.driver.find_element(By.XPATH, "/html/body/div[35]/div[2]/div/div/div/div/div[2]/div/button").click()
+
 
     def tearDown(self) -> None:
-        time.sleep(1)
+        time.sleep(10)
         self.driver.close()
 
 
