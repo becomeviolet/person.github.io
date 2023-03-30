@@ -24,21 +24,21 @@ class ThreePointOneLine:
 
     def is_one_line(self, x1, y1, x2, y2, x3, y3):
         #3点相同 特殊情况1
-        if x1 == x2 and x2 == x3 and y1 == y2 and y2 == y3:
+        if x1 == x2 and x2 == x3 and y1 == y2 and y2 == y3:  # 全真， 全假 即可覆盖
             return False
         #2点相同1 特殊情况2
-        if x1 == x2 and y1 == y2 and x1 != x3 and y1 != y3:
+        if x1 == x2 and y1 == y2 and x1 != x3 and y1 != y3: #全真，全假 即可覆盖
             return False
         #2点相同情况2 特殊情况3
         if x2 == x3 and y2 == y3 and x1 != x3 and y1 != y3:
             return False
         #3点横坐标相同，纵坐标不同  特殊情况4
         if x1 == x2 and x2 == x3:
-            if y1 != y2 and y2 != y3: #语句覆盖，必须走第二判断？
+            if y1 != y2 and y2 != y3: #语句覆盖，必须走第二判断？ #
                 return True
         #3点纵坐标相同，横坐标不同  特殊情况5
         if y1 == y2 and y2 == y3:
-            if x1 != x2 and x2 != x3: #语句覆盖，必须走第二判断？
+            if x1 != x2 and x2 != x3: #语句覆盖，必须走第二判断？  #
                 return True
         #前两点斜率
         slope1 = (y2 - y1) / (x2 - x1)
