@@ -16,7 +16,7 @@ class kaida(unittest.TestCase):
 
     def test01(self):
         self.denglu()
-        self.mubiao1()
+
         self.mubiao2()
 
 
@@ -130,6 +130,20 @@ class kaida(unittest.TestCase):
         self.driver.find_element(By.XPATH,'/html/body/div[1]/div/div/div/div[2]/div/div[1]/div/button[1]/span').click()
         #退出iframe
         self.driver.switch_to.default_content()
+        #等待
+        time.sleep(2)
+        #评论时间
+        self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div").click()
+        #等待
+        time.sleep(2)
+        #选择日期
+        self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div/div[2]/div/div/div/div[2]/div/span[17]").click()
+        #等待
+        time.sleep(2)
+        #确定
+        self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div/div[2]/div/div/div/div[4]/button[3]").click()
+        #等待
+        time.sleep(2)
         #提交
         self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../button").click()
         time.sleep(1)
