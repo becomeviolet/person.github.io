@@ -136,6 +136,10 @@ class kaida(unittest.TestCase):
         self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div").click()
         #等待
         time.sleep(2)
+        #上个月
+        self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div/div[2]/div/div/div/div/span[2]").click()
+        #等待
+        time.sleep(2)
         #选择日期
         self.driver.find_element(By.XPATH,"//textarea[@placeholder='请输入评价文字']/../../../../../../../form/div/div[8]/div/div/div/div[2]/div/div/div/div[2]/div/span[17]").click()
         #等待
@@ -151,12 +155,6 @@ class kaida(unittest.TestCase):
         text2 = self.driver.find_element(By.XPATH, "//span[text()='保存成功']").text
         #断言是否保存成功
         assert "保存成功" in text2
-
-
-
-
-
-
     def tearDown(self) -> None:
         time.sleep(3)
         self.driver.close()
