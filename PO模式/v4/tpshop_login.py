@@ -3,12 +3,12 @@
 '''
 from time import sleep
 from selenium import webdriver
-import pytest
 from selenium.webdriver.common.by import By
 
+import pytest
 from PO模式.v3.utils import DriverUtil, get_alert_msg
 from PO模式.v4.index_page import IndexTask
-
+from login_page import LoginTask
 
 class TestLogin(object):
     '''登录测试类'''
@@ -19,7 +19,9 @@ class TestLogin(object):
         # self.driver.maximize_window()
         # self.driver.implicitly_wait(10)
         self.driver = DriverUtil.get_driver()#获取浏览器对象
-        self.Index_task = IndexTask()
+        self.Index_task = IndexTask()#实例化首页业务层对象
+        self.login_task = LoginTask()#实例化登录页面业务层对象
+
     def teardown_class(self):
         # sleep(3)
         # self.driver.quit()
@@ -43,20 +45,22 @@ class TestLogin(object):
     def test_accout_does_not_exist(self):
         '''账号不存在测试方法'''
 
-        # 点击首页的“登录”链接，进入登录页面
-        # self.driver.find_element(By.LINK_TEXT, "登录").click()
-        # 输入一个不存在的用户名
-        self.driver.find_element(By.ID, 'username').send_keys('13811110001')
-        # 输入密码
-        self.driver.find_element(By.ID, "password").send_keys('123456')
-        # 输入验证码
-        self.driver.find_element(By.ID, 'verify_code').send_keys('8888')
-        # 点击登录按钮
-        self.driver.find_element(By.NAME, 'sbtutton').click()
-        # 获取错误信息
+        # # 点击首页的“登录”链接，进入登录页面
+        # # self.driver.find_element(By.LINK_TEXT, "登录").click()
+        # # 输入一个不存在的用户名
+        # self.driver.find_element(By.ID, 'username').send_keys('13811110001')
+        # # 输入密码
+        # self.driver.find_element(By.ID, "password").send_keys('123456')
+        # # 输入验证码
+        # self.driver.find_element(By.ID, 'verify_code').send_keys('8888')
+        # # 点击登录按钮
+        # self.driver.find_element(By.NAME, 'sbtutton').click()
+        # # 获取错误信息
         # 获取元素文本值
         # sleep(2)
         # msg = self.driver.find_element(By.CLASS_NAME, 'layui_layer_content').text
+        self.login_task.login_method('13811110001', '123456', '8888')
+
         msg = get_alert_msg()  # 获取弹窗信息
         print('错误信息：', msg)
 
@@ -65,20 +69,21 @@ class TestLogin(object):
 
         # 点击首页的“登录”链接，进入登录页面
         # self.driver.find_element(By.LINK_TEXT, "登录").click()
-        # 输入一个用户名
-        self.driver.find_element(By.ID, 'username').send_keys('13811110000')
-        # 输入错误密码
-        self.driver.find_element(By.ID, "password").send_keys('error')
-        # 输入验证码
-        self.driver.find_element(By.ID, 'verify_code').send_keys('8888')
-        # 点击登录按钮
-        self.driver.find_element(By.NAME, 'sbtutton').click()
+        # # 输入一个用户名
+        # self.driver.find_element(By.ID, 'username').send_keys('13811110000')
+        # # 输入错误密码
+        # self.driver.find_element(By.ID, "password").send_keys('error')
+        # # 输入验证码
+        # self.driver.find_element(By.ID, 'verify_code').send_keys('8888')
+        # # 点击登录按钮
+        # self.driver.find_element(By.NAME, 'sbtutton').click()
         # 获取错误信息
         # 获取元素文本值
         # sleep(2)
         # msg = self.driver.find_element(By.CLASS_NAME, 'layui_layer_content').text
+        self.login_task.login_method('13800001111', 'error', '8888')
         msg = get_alert_msg()#获取弹窗信息
         print('错误信息：', msg)
 
 if __name__ == '__main__':
-    pytest.main(['-s', 'tpshop_login_3.py'])
+    pytest.main(['-s', 'tpshop_login.py'])
