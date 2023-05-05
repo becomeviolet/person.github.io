@@ -25,21 +25,21 @@ class kaida(unittest.TestCase):
         self.driver.get("http://v4.crmeb.net/admin/login")
         self.driver.maximize_window()
         # 点击登录
-        self.driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[2]/form/div[3]/div/button").click()
+        self.driver.find_element(By.XPATH, "/html/body/div/div/div[基础_1]/div[2]/form/div[3]/div/button").click()
         time.sleep(3)
         # 点掉图片
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[3]/img").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[3]/img").click()
 
     def mubiao1(self):
         # 商品
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[1]/ul/li[4]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[基础_1]/ul/li[4]").click()
         time.sleep(1)
         # 商品规格
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[2]/ul/li[3]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[2]/ul/li[3]").click()
         time.sleep(1)
         # 添加规格
         self.driver.find_element(By.XPATH,
-                                 "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div[1]/div/div/form/div/div[2]/button/span").click()
+                                 "/html/body/div[基础_1]/div/div[2]/div[2]/div/div[2]/div[基础_1]/div/div/form/div/div[2]/button/span").click()
         time.sleep(1)
         # 商品规格-添加新规格
         self.driver.find_element(By.XPATH, "//button[contains(@class,'ml95 mt10 ivu-btn ivu-btn-primary')]").click()
@@ -61,14 +61,14 @@ class kaida(unittest.TestCase):
 
     def mubiao2(self):
         # 商品
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[1]/ul/li[4]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[基础_1]/ul/li[4]").click()
         # 商品评论
         time.sleep(2)
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[2]/ul/li[4]/span").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[2]/ul/li[4]/span").click()
         # 添加自评
         time.sleep(1)
         self.driver.find_element(By.XPATH,
-                                 "/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div/button/span").click()
+                                 "/html/body/div[基础_1]/div/div[2]/div[2]/div/div[2]/div[基础_1]/div[2]/div/div[基础_1]/div/button/span").click()
         # 打开商品选项卡
         time.sleep(1)
         self.driver.find_element(By.XPATH, '//i[@class="ivu-icon ivu-icon-ios-add"]').click()
@@ -78,7 +78,7 @@ class kaida(unittest.TestCase):
         self.iframe1 = self.driver.find_elements(By.XPATH,'//iframe')
         self.driver.switch_to.frame(self.iframe1[0])
         self.driver.find_element(By.XPATH,
-                                 '/html/body/div[1]/div/div[1]/div[1]/div[2]/table/tbody/tr[1]/td[1]/div/div/label/span/input').click()
+                                 '/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div[2]/table/tbody/tr[基础_1]/td[基础_1]/div/div/label/span/input').click()
 
 
     def tearDown(self) -> None:

@@ -10,7 +10,7 @@ option.add_experimental_option("detach",True)
 
 driver = webdriver.Chrome(options=option)
 driver.get("http://v4.crmeb.net/admin/login")
-driver.find_element(By.XPATH,'//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/button').click()
+driver.find_element(By.XPATH,'//*[@id="app"]/div/div[基础_1]/div[2]/form/div[3]/div/button').click()
 #页面跳转，组合暂停
 driver.implicitly_wait(10)
 time.sleep(2)

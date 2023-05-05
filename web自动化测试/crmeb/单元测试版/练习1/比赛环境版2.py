@@ -26,23 +26,23 @@ class kaida(unittest.TestCase):
         #使浏览器最大化尺寸
         self.driver.maximize_window()
         #点击登录
-        self.driver.find_element(By.XPATH, "/html/body/div/div/div[1]/div[2]/form/div[3]/div/button").click()
+        self.driver.find_element(By.XPATH, "/html/body/div/div/div[基础_1]/div[2]/form/div[3]/div/button").click()
         #等待页面刷新结束
         time.sleep(3)
         #点掉图片
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[3]/img").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[3]/img").click()
 
     def mubiao1(self):
         #点击商品
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[1]/ul/li[4]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[基础_1]/ul/li[4]").click()
         #等待加载
         time.sleep(1)
         #点击商品规格
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[2]/ul/li[3]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[2]/ul/li[3]").click()
         #等待加载
         time.sleep(1)
         #点击添加规格
-        self.driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div[1]/div/div/form/div/div[2]/button/span").click()
+        self.driver.find_element(By.XPATH,"/html/body/div[基础_1]/div/div[2]/div[2]/div/div[2]/div[基础_1]/div/div/form/div/div[2]/button/span").click()
         #等待加载
         time.sleep(1)
         #商品规格-添加新规格
@@ -70,15 +70,15 @@ class kaida(unittest.TestCase):
 
     def mubiao2(self):
         #商品
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[1]/ul/li[4]").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[基础_1]/ul/li[4]").click()
         #等待
         time.sleep(2)
         #商品评论
-        self.driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[1]/div/div/div[2]/ul/li[4]/span").click()
+        self.driver.find_element(By.XPATH, "/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div/div/div[2]/ul/li[4]/span").click()
         #等待
         time.sleep(1)
         #添加自评
-        self.driver.find_element(By.XPATH,"/html/body/div[1]/div/div[2]/div[2]/div/div[2]/div[1]/div[2]/div/div[1]/div/button/span").click()
+        self.driver.find_element(By.XPATH,"/html/body/div[基础_1]/div/div[2]/div[2]/div/div[2]/div[基础_1]/div[2]/div/div[基础_1]/div/button/span").click()
         #等待
         time.sleep(1)
         #打开商品选项卡
@@ -91,7 +91,7 @@ class kaida(unittest.TestCase):
         #等待
         time.sleep(1)
         #选择图片输入项
-        self.driver.find_element(By.XPATH,'/html/body/div[1]/div/div[1]/div[1]/div[2]/table/tbody/tr[1]/td[1]/div/div/label/span/input').click()
+        self.driver.find_element(By.XPATH,'/html/body/div[基础_1]/div/div[基础_1]/div[基础_1]/div[2]/table/tbody/tr[基础_1]/td[基础_1]/div/div/label/span/input').click()
         #退出iframe
         self.driver.switch_to.default_content()
         #等待
@@ -105,9 +105,9 @@ class kaida(unittest.TestCase):
         self.iframe2 = self.driver.find_elements(By.XPATH, '//iframe')
         self.driver.switch_to.frame(self.iframe2[0])
         #js定位选择图片
-        self.driver.execute_script(script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(1) > img").click()')
+        self.driver.execute_script(script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(基础_1) > img").click()')
         #确定选中图片
-        self.driver.find_element(By.XPATH,'/html/body/div[1]/div/div/div/div[2]/div/div[1]/div/button[1]/span').click()
+        self.driver.find_element(By.XPATH,'/html/body/div[基础_1]/div/div/div/div[2]/div/div[基础_1]/div/button[基础_1]/span').click()
         #退出iframe
         self.driver.switch_to.default_content()
         #等待
@@ -126,8 +126,8 @@ class kaida(unittest.TestCase):
         self.iframe3 = self.driver.find_elements(By.XPATH,"//iframe")
         self.driver.switch_to.frame(self.iframe3[0])
         #js定位选择图片
-        self.driver.execute_script(script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(1) > img").click()')
-        self.driver.find_element(By.XPATH,'/html/body/div[1]/div/div/div/div[2]/div/div[1]/div/button[1]/span').click()
+        self.driver.execute_script(script='document.querySelector("#app > div > div > div > div.colLeft.ivu-col.ivu-col-span-xs-24.ivu-col-span-sm-18.ivu-col-span-md-18.ivu-col-span-lg-18.ivu-col-span-xl-18 > div > div.pictrueList.acea-row > div > div.acea-row.mb10 > div:nth-child(基础_1) > img").click()')
+        self.driver.find_element(By.XPATH,'/html/body/div[基础_1]/div/div/div/div[2]/div/div[基础_1]/div/button[基础_1]/span').click()
         #退出iframe
         self.driver.switch_to.default_content()
         #等待

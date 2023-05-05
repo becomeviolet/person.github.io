@@ -22,7 +22,7 @@ class test_web(unittest.TestCase):
 
     def denglu(self):
         #登录页面
-        self.driver.find_element(By.XPATH,'//*[@id="app"]/div/div[1]/div[2]/form/div[3]/div/button').click()
+        self.driver.find_element(By.XPATH,'//*[@id="app"]/div/div[基础_1]/div[2]/form/div[3]/div/button').click()
         #组合等待
         self.driver.implicitly_wait(10)
         time.sleep(1)
