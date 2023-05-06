@@ -6,21 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="00c6ab08-8bca-4f11-80d7-d3885480deff" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lanqiaobeidemo/源码项目包/lanqiaobeidemo/search_course_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/lanqiaobeidemo/源码项目包/lanqiaobeidemo/search_course_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/4_7练习/ada.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/4_7练习/ada.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/登录/xpath实现.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/登录/xpath实现.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/2.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/3.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/4.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/5.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/6.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/最终.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/最终.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/比赛环境版.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/比赛环境版.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/比赛环境版2.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/单元测试版/练习1/比赛环境版2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/源代码版/登录/xpath实现.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/源代码版/登录/xpath实现.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web自动化测试/crmeb/源代码版/获取文本/获取文本.py" beforeDir="false" afterPath="$PROJECT_DIR$/web自动化测试/crmeb/源代码版/获取文本/获取文本.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/单元测试/用例2/官方基本路径覆盖法.py" beforeDir="false" afterPath="$PROJECT_DIR$/单元测试/用例2/官方基本路径覆盖法.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/bilib/Desktop/克隆/person.github.io/Pytest",
+    "last_opened_file_path": "D:/克隆/person.github.io",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -179,10 +164,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/person_github_io$account_does_not_exist.coverage" NAME="account_does_not_exist 覆盖结果" MODIFIED="1683005313922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PO模式/v0" />
-    <SUITE FILE_PATH="coverage/person_github_io$.coverage" NAME=" 覆盖结果" MODIFIED="1683296607944" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Pytest/1" />
-    <SUITE FILE_PATH="coverage/person_github_io$utils.coverage" NAME="utils 覆盖结果" MODIFIED="1683087715972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PO模式/v3" />
-    <SUITE FILE_PATH="coverage/person_github_io$basePage.coverage" NAME="basePage 覆盖结果" MODIFIED="1683004378413" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PO模式/basePage" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
