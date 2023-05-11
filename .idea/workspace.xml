@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00c6ab08-8bca-4f11-80d7-d3885480deff" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="00c6ab08-8bca-4f11-80d7-d3885480deff" name="变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +36,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/克隆/person.github.io",
+    "last_opened_file_path": "C:/Users/bilib/Desktop/克隆/python",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,6 +157,7 @@
       <workItem from="1683085947972" duration="6356000" />
       <workItem from="1683188194099" duration="2399000" />
       <workItem from="1683292000288" duration="4435000" />
+      <workItem from="1683707599966" duration="54000" />
     </task>
     <servers />
   </component>
