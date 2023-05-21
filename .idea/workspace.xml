@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="00c6ab08-8bca-4f11-80d7-d3885480deff" name="变更" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pytest/配置文件_2/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Pytest/配置文件_2/pytest.ini" afterDir="false" />
     </list>
+=======
+    <list default="true" id="00c6ab08-8bca-4f11-80d7-d3885480deff" name="变更" comment="" />
+>>>>>>> 3cfee84d5d0e4e28d1b37620295b3b68a4b826b6
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +46,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
     "last_opened_file_path": "C:/Users/bilib/Desktop/克隆/person.github.io",
+=======
+    "last_opened_file_path": "D:/克隆/Python",
+>>>>>>> 3cfee84d5d0e4e28d1b37620295b3b68a4b826b6
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
