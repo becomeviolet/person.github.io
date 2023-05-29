@@ -49,14 +49,14 @@ class vip_Page(object):
         return self.driver.find_element(By.ID, '''customername''')
         # return self.driver.find_element(By.ID,"verify_code")
 
-    def find_login_btn(self):
+    def find_Select(self):
         """定位下拉框方法"""
         return Select(self.driver.find_element(By.ID, '''childsex''')) 
         # return self.driver.find_element(By.NAME,'sbtbutton')
 
     def find_assert_text(self):
         """定位需要验证的text"""
-        return self.driver.find_element(By.ID, '''childdate''').click()
+        # return self.driver.find_element(By.ID, '''childdate''').click()
 
 
 class vip_Handle(object):

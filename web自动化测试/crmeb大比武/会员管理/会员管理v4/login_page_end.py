@@ -7,14 +7,6 @@ from selenium.webdriver.common.by import By
 from  浏览器管理 import DriverUtil
 class LoginPage(object):
     """登录对象层"""
-        # self.driver.find_element(By.ID, '''username''').send_keys('''admin''')
-        # self.driver.find_element(By.ID, '''password''').send_keys('''admin123''')
-        # self.driver.find_element(By.ID, '''verifycode''').send_keys('''0000''')
-        # self.driver.find_element(By.XPATH, '''/html/body/div[4]/div/form/div[6]/button''').click()
-        # time.sleep(2)
-        # text1 = self.driver.find_element(By.XPATH, '''/html/body/div[2]/div/div[2]/ul[2]/li[1]/a''').text
-        # assert "管理员" in text1
-        # time.sleep(1)
 
     def __init__(self):
         """获取浏览器对象"""
@@ -43,7 +35,6 @@ class LoginPage(object):
     def find_assert_text(self):
         """定位需要验证的text"""
         return self.driver.find_element(By.XPATH, '''/html/body/div[2]/div/div[2]/ul[2]/li[1]/a''')
-
 
 class LoginHandle(object):
     """登录操作层"""

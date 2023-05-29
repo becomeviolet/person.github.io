@@ -44,17 +44,9 @@ class test_customer(unittest.TestCase):
     #     print('错误信息：', msg)
 
     def test_login(self):
-        # self.driver.find_element(By.ID, '''username''').send_keys('''admin''')
-        # self.driver.find_element(By.ID, '''password''').send_keys('''admin123''')
-        # self.driver.find_element(By.ID, '''verifycode''').send_keys('''0000''')
+        """登录页方法"""
         self.login_task.login_method('''admin''', '''admin123''', '''0000''', '''管理员''')
-  
-        # time.sleep(1)
-        # self.driver.find_element(By.XPATH, '''/html/body/div[4]/div/form/div[6]/button''').click()
-        # time.sleep(2)
-        # text1 = self.driver.find_element(By.XPATH, '''/html/body/div[2]/div/div[2]/ul[2]/li[1]/a''').text
-        # assert "管理员" in text1
-        # time.sleep(1)
+
 
     # def test_add(self):
     #     self.driver.find_element(By.XPATH, '''//*[@id="navbar"]/ul[1]/li[5]/a''').click()
