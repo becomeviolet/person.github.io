@@ -46,7 +46,7 @@ class test_customer(unittest.TestCase):
             time.sleep(2)
             self.driver.find_element(By.XPATH, '''/html/body/div[7]/div/div/div[3]/button''').click()
         except:
-            print("重复添加")
+            print("非重复添加")
         time.sleep(1)
 
     def test_select(self):
