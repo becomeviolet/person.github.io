@@ -1,5 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-webdriver.Edge().
-time.sleep(3)
+import csv
+
+dates = csv.reader(open("3.csv", "r"))
+
+for date in dates:
+    print(date)
+

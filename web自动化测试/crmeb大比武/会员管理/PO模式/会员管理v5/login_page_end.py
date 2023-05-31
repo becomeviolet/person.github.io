@@ -7,34 +7,37 @@ from selenium.webdriver.common.by import By
 from  浏览器管理 import DriverUtil
 class LoginPage(object):
     """登录对象层"""
+    
 
     def __init__(self):
         """获取浏览器对象"""
         self.driver = DriverUtil.get_driver()
 
+        self.username = (By.ID, '''username''')
+        self.password = (By.ID, '''password''')
+        self.verify_code = (By.ID, '''verifycode''')
+        self.login_btn = (By.XPATH, '''/html/body/div[4]/div/form/div[6]/button''')
+        self.assert_text = (By.XPATH, '''/html/body/div[2]/div/div[2]/ul[2]/li[1]/a''')
+
     def find_username(self):
         """定位用户名方法"""
-        return self.driver.find_element(By.ID, '''username''')
-        #return self.driver.find_element(By.ID,'username')
+        return self.driver.find_element(self.username[0], self.username[1])
 
     def find_password(self):
         """定位密码方法"""
-        return self.driver.find_element(By.ID, '''password''')
-        # return self.driver.find_element(By.ID,'password')
+        return self.driver.find_element(self.password[0], self.password[1])
 
     def find_verify_code(self):
         """定位验证码方法"""
-        return self.driver.find_element(By.ID, '''verifycode''')
-        # return self.driver.find_element(By.ID,"verify_code")
+        return self.driver.find_element(self.verify_code[0], self.verify_code[1])
 
     def find_login_btn(self):
         """定位登录按钮方法"""
-        return self.driver.find_element(By.XPATH, '''/html/body/div[4]/div/form/div[6]/button''') 
-        # return self.driver.find_element(By.NAME,'sbtbutton')
+        return self.driver.find_element(self.login_btn[0], self.login_btn[1]) 
 
     def find_assert_text(self):
         """定位需要验证的text"""
-        return self.driver.find_element(By.XPATH, '''/html/body/div[2]/div/div[2]/ul[2]/li[1]/a''')
+        return self.driver.find_element(self.assert_text[0], self.assert_text[1])
 
 class LoginHandle(object):
     """登录操作层"""
