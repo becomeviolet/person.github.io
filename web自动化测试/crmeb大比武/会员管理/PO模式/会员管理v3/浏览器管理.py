@@ -3,13 +3,10 @@
 '''
 from selenium import webdriver
 from time import sleep
-
-
 class DriverUtil(object):
     """浏览器对象管理类"""
     #说明：对象变量只需要在类定义内部使用，因此定义为私有
     __driver = None #浏览器对象变量初始化状态
-
     @classmethod
     def get_driver(cls):
         """获取浏览器对象方法"""
@@ -21,7 +18,6 @@ class DriverUtil(object):
             cls.__driver.maximize_window()
             cls.__driver.implicitly_wait(10)
         return cls.__driver
-    
     @classmethod
     def quit_driver(cls):
         """退出出浏览器对象方法"""

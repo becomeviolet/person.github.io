@@ -1,9 +1,12 @@
 import time
+
 from selenium.webdriver.support.select import Select
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+
 import unittest
 
-from selenium.webdriver.common.by import By
+
 
 
 class test_customer(unittest.TestCase):
